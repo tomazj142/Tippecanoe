@@ -240,6 +240,8 @@ struct json_serialize_action : json_feature_action {
 	serialization_state *sst;
 	int layer;
 	std::string layername;
+	
+	virtual ~json_serialize_action() = default;
 
 	int add_feature(json_object *geometry, bool geometrycollection, json_object *properties, json_object *id, json_object *tippecanoe, json_object *feature) {
 		sst->line = geometry->parser->line;

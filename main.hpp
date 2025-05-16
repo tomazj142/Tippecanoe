@@ -27,6 +27,7 @@ struct index {
 extern std::vector<clipbbox> clipbboxes;
 
 void checkdisk(std::vector<struct reader> *r);
+int run_tippecanoe(int argc, char **argv);
 
 extern int geometry_scale;
 extern int quiet;
